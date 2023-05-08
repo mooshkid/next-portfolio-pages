@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Container, Flex, Stack, Text } from "@chakra-ui/react";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -110,7 +111,21 @@ export default function Home() {
         </div>
       </main> */}
       <main>
+        <Container maxW={"7xl"} mx={'auto'}>
+          <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
+            <Flex align={'center'} justify={'center'}>
+              <Stack flex={1} spacing={6} w={'full'} maxW={'lg'}>
+                <Text>Lorem ipsum dolor sit amet.</Text>
+                <Text>Lorem ipsum dolor sit amet.</Text>
+                <Text>Lorem ipsum dolor sit amet.</Text>
+              </Stack>
+              <Flex flex={1}>
+                <Image src={"https://mooshkid.github.io/assets/slark_icon.png"} alt="hero image" width={500} height={300}/>
+              </Flex>
+            </Flex>
+          </Stack>
+        </Container>
       </main>
     </>
-  )
+  );
 }
