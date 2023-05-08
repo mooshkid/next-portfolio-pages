@@ -28,7 +28,7 @@ const NavBar = () => {
             />
           </Link>
         </Box>
-        <Flex gap={"4"}>
+        <Flex className="nav_list" gap={"4"}>
           <Link href={"/about"}>About</Link>
           <Link href={"/projects"}>Projects</Link>
           <Link href={"/contact"}>Contact</Link>
