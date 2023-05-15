@@ -17,7 +17,8 @@ const NavBar = () => {
 
   return (
     <header>
-      <Flex bg={useColorModeValue("white", "red")} justify={"space-between"} alignItems={"center"}>
+      {/* <Flex bg={useColorModeValue("white", "red")} justify={"space-between"} alignItems={"center"}> */}
+      <Flex justify={"space-between"} alignItems={"center"}>
         <Box>
           <Link href={"/"}>
             <Image
