@@ -116,7 +116,7 @@ export default function Home() {
           <Stack id="hero" minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
             <Flex align={'center'} justify={'center'} mx={'auto'}>
               <Stack flex={1} spacing={6} w={'full'} maxW={'lg'}>
-                <Heading as='h1' size='3xl'>Hi, I'm Masa</Heading>
+                <Heading as='h1' size='3xl'>Hi, I&apos;m Masa</Heading>
                 <Text>Front-end Developer</Text>
                 <Text>Lorem ipsum dolor sit amet.</Text>
                 <Stack direction="row">
