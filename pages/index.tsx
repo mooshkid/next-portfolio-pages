@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { Container, Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import Hero from "@/components/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -112,25 +110,7 @@ export default function Home() {
         </div>
       </main> */}
       <main>
-        <Container maxW={"7xl"} mx={'auto'}>
-          <Stack id="hero" minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
-            <Flex align={'center'} justify={'center'} mx={'auto'}>
-              <Stack flex={1} spacing={6} w={'full'} maxW={'lg'}>
-                <Heading as='h1' size='3xl'>Hi, I&apos;m Masa</Heading>
-                <Text>Front-end Developer</Text>
-                <Text>Lorem ipsum dolor sit amet.</Text>
-                <Stack direction="row">
-                  <Link href="">Resume</Link>
-                  <Link href="https://github.com/mooshkid/" target="_blank">GitHub</Link>
-                  <Link href="">Coffee</Link>
-                </Stack>
-              </Stack>
-              <Flex flex={1}>
-                <Image src={"https://mooshkid.github.io/assets/slark_icon.png"} alt="hero image" width={500} height={300}/>
-              </Flex>
-            </Flex>
-          </Stack>
-        </Container>
+        <Hero />
       </main>
     </>
   );
